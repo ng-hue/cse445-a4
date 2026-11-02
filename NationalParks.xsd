@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- NationalParks.xsd : schema for the NationalParks directory (CSE445 Assignment 4, Q1.1) -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://ng-hue.github.io/cse445-a4"
+           xmlns="https://ng-hue.github.io/cse445-a4"
+           elementFormDefault="qualified">
 
   <!-- Root element: a list of one or more NationalPark elements -->
   <xs:element name="NationalParks">
@@ -19,7 +22,7 @@
       <xs:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xs:sequence>
     <!-- Rating is optional (implied) -->
-    <xs:attribute name="Rating" type="xs:string" use="optional"/>
+    <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
   </xs:complexType>
 
   <!-- Address: Number, Street, City, State, Zip -->

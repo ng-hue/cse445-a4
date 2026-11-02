@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NationalPark>
+<NationalPark xmlns="https://ng-hue.github.io/cse445-a4"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://ng-hue.github.io/cse445-a4 https://ng-hue.github.io/cse445-a4/NationalParks.xsd">
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
